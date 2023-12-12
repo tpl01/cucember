@@ -10,7 +10,8 @@ import java.time.Duration;
 
 public class Driver {
 
-    private Driver(){  //singleton pattern(tekli kullanım)
+    private Driver(){
+        //singleton pattern(tekli kullanım)
         //Driver classindan obje olusturmanın önüne gecmek icin conts.private yaptık
     }
 

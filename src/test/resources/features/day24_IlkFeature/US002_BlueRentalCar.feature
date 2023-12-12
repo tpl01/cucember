@@ -1,5 +1,7 @@
+
+@US002
 Feature: US002 BlueRentalCar Sayfasinda Login Islemi
-  @gr1
+
   Scenario: TC01 Verilen Email ve Password ile Login olunur
     Given kullanici blueRentalCar sayfasina gider
     But login butonuna tiklar

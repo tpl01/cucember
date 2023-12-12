@@ -1,4 +1,4 @@
-@all
+@US003
 Feature: US003 Amazon Sayfasi Testi
 
   #Feature file daki scenario'larımızda ortak adımlarımız var ise bunun için Feature: anahtar kelimesinden sonra
@@ -6,6 +6,7 @@ Feature: US003 Amazon Sayfasi Testi
   #scenario'lardan önce çalışır.
 
   Background: Ana Sayfaya Gider
+    #ortak adimlar icin @BeforeMethod mantigi ile calisir
     Given kullanici amazon sayfasina gider
 
     @iphone

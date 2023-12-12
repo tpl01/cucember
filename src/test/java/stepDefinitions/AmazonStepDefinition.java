@@ -13,6 +13,7 @@ public class AmazonStepDefinition {
 
     @Given("kullanici amazon sayfasina gider")
     public void kullanici_amazon_sayfasina_gider() {
+
         Driver.getDriver().get(ConfigReader.getProperty("amazonUrl"));
     }
 
@@ -29,7 +30,7 @@ public class AmazonStepDefinition {
 
     @Then("kullanici arama kutusunda samsung aratir")
     public void kullanici_arama_kutusunda_samsung_aratir() {
-        AmazonPage amazonPage = new AmazonPage();
+
         amazonPage.aramaKutusu.sendKeys("samsung", Keys.ENTER);
 
     }
