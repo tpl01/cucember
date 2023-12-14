@@ -55,7 +55,7 @@ public class BlueRentalCarStepDefinition {
 
     @And("verilen kullanici bilgileri ile login olur")
     public void verilenKullaniciBilgileriIleLoginOlur(DataTable data) {
-        for (int i = 1; i < data.asLists().size(); i++) {
+        for (int i = 1; i < data.asLists().size(); i++) {   //asLists()  2 verili oldugu icin
             rentalPage.email.sendKeys(data.row(i).get(0), Keys.TAB, data.row(i).get(1), Keys.ENTER);
             ReusableMethods.bekle(3);
             Driver.getDriver().navigate().back();

@@ -12,6 +12,7 @@
 #         "raj.khan@bluerentalcars.com","v7Hg_va^",
 #         "pam.raymond@bluerentalcars.com","Nga^g6!"
 
+@US009
 Feature: US009 BlueRentalCar Login Islemi
 
   Scenario Outline: TC01 kullanici tum manager login bilgileriyle giriş yapabilmeli

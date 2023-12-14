@@ -1,3 +1,4 @@
+@US006
 Feature: US006 Google Testi
 
   Scenario: TC01 Google Sayfasinda Arama Yapilir

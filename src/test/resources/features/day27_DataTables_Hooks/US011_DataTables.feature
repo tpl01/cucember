@@ -9,6 +9,14 @@ Feature: US011 Google Testi
       | bmw     |
     And sayfayi kapatir
 
+  Scenario: TC02 Google sayfasinda arama yapilir
+    Given kullanici parametreli method ile propertiesden "googleUrl" sayfasina gider
+    When kullanici verilen bilgiler ile arama yapar ikinci yol
+      | volvo |
+      | audi  |
+      | honda |
+    And sayfayi kapatir
+
 
 
 

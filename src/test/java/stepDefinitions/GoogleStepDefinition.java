@@ -12,6 +12,8 @@ import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.ReusableMethods;
 
+import java.util.List;
+
 public class GoogleStepDefinition {
     GooglePages googlePages=new GooglePages();
 
@@ -76,11 +78,24 @@ public class GoogleStepDefinition {
 
     @Then("kullanici verilen bilgiler ile arama yapar")
     public void kullaniciVerilenBilgilerIleAramaYapar(DataTable data) {
+
+        List<String> dataTableList=data.asList();
         System.out.println(data.asList());
-        for(int i=1;i<data.asList().size();i++){
+        for(int i=1;i< dataTableList.size();i++){
          googlePages.aramaKutusu.sendKeys(data.asList().get(i),Keys.ENTER);
             ReusableMethods.bekle(2);
-            Assert.assertTrue(Driver.getDriver().getTitle().contains(data.asList().get(i)));
+            Assert.assertTrue(Driver.getDriver().getTitle().contains(dataTableList.get(i)));
+            googlePages.aramaKutusu.clear();   //yazip silsin diye
+        }
+
+    }
+
+    @When("kullanici verilen bilgiler ile arama yapar ikinci yol")
+    public void kullaniciVerilenBilgilerIleAramaYaparIkinciYol(List<String>list) {
+
+        for (String w :list  ) {
+            googlePages.aramaKutusu.sendKeys(w+Keys.ENTER);
+            Assert.assertTrue(Driver.getDriver().getTitle().contains(w));
             googlePages.aramaKutusu.clear();
         }
 
