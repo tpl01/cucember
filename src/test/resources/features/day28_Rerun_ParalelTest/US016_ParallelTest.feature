@@ -14,7 +14,7 @@ Feature: US016 Google Testi
     But kullanici 2 saniye bekler
     * sayfayi kapatir
 
-@a3
+ @a3
   Scenario: TC03 Google sayfasinda Arama kutusunda arac aratilir
     Given kullanici parametreli method ile propertiesden "googleUrl" sayfasina gider
     Then arama kutusunda propertiesden "arac3" aratir

@@ -17,12 +17,15 @@ package'ı yeraldığı için fazladan package oluşturmamak adına biz stepDefi
 oluşturduk. Eğer sadece istediğimiz bir scenariodan önce çalışmasını istediğimiz bir kod olursa @Before notasyonuna
 parametre olarak scenario'ya verdiğimiz tag'ı yazarız. Dolayısıyla sadece tag'ı belirttiğimiz @Before methodu
 scenariodan önce devreye girer.
+
+glue = {"stepDefinitions","hooks"},   seklinde de olur
  */
 
 
 public class Hooks {
     @Before
     public void setUp() {
+
         System.out.println("Scenario'lar Çalismaya Başladı");
     }
 

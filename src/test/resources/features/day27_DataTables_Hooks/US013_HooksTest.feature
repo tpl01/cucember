@@ -1,3 +1,4 @@
+@US013
 Feature: US013 Google Testi
   @arac
   Scenario: TC01 Google sayfasinda Arama kutusunda arac aratilir

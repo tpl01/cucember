@@ -14,7 +14,7 @@ import org.junit.runner.RunWith;
         "rerun:TestOutput/failed_scenario.txt"},
         features = "src/test/resources/features", //features package'ının yolu (content root)
         glue = "stepDefinitions", //stepDefinitions package ismi
-        tags = "@US001", //Hangi scenarioları bu tag'ı belirtirsek o scenariolar çalışır
+        tags = "@US013", //Hangi scenarioları bu tag'ı belirtirsek o scenariolar çalışır
         //@US001 or @US002  olabilir
         dryRun = false, //true seçersek scenariolari kontrol eder browser'ı çalıştırmaz
         //step definetionlarda eksik varmi kontrol eder (true dersek)
